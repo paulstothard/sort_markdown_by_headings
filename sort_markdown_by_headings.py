@@ -2,10 +2,10 @@
 """
 Sorts a Markdown file based on headings.
 
-Usage: 
+Usage:
     python sort_markdown_by_headings.py input
 
-Author: 
+Author:
     Paul Stothard
 """
 
@@ -245,7 +245,7 @@ if __name__ == "__main__":
     # add a newline at the end of the file if it doesn't already exist
     if sorted_markdown[-1] != "\n":
         sorted_markdown += "\n"
-    
+
     if args.output:
         with open(args.output, "w") as f:
             f.write(sorted_markdown)
